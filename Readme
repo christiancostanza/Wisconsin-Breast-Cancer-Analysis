@@ -7,18 +7,18 @@ This project analyzes the Wisconsin Breast Cancer Dataset using multiple machine
 - **Nico Gonnella**
 - **Christian Costanza**
 
- **Date:** May 5, 2024
+📅 **Date:** May 5, 2024
 
 ## **Objectives**
- Perform **Exploratory Data Analysis (EDA)** to understand relationships between features.  
- Implement **Multiple Linear Regression (MLR)** for quantitative feature analysis.  
- Develop **classification models** to predict cancer diagnosis.  
- Use **validation techniques** (cross-validation, validation set approach) to assess model performance.  
- Apply **Lasso regression** for feature selection.  
- Train **Random Forest** and **Support Vector Classification (SVC)** models to improve classification accuracy.  
+✔️ Perform **Exploratory Data Analysis (EDA)** to understand relationships between features.  
+✔️ Implement **Multiple Linear Regression (MLR)** for quantitative feature analysis.  
+✔️ Develop **classification models** to predict cancer diagnosis.  
+✔️ Use **validation techniques** (cross-validation, validation set approach) to assess model performance.  
+✔️ Apply **Lasso regression** for feature selection.  
+✔️ Train **Random Forest** and **Support Vector Classification (SVC)** models to improve classification accuracy.  
 
 ## **Dataset**
- **Source:** Wisconsin Breast Cancer Dataset
+📌 **Source:** Wisconsin Breast Cancer Dataset
 
 ### **Preprocessing**
 - Removed a column containing only NA values.
@@ -32,26 +32,26 @@ install.packages(c("tidyverse", "leaps", "glmnet", "randomForest", "e1071", "cor
 ```
 
 ## **Methodology**
-### ** Data Preprocessing & Exploratory Analysis**
- Filtered dataset to select key features.  
- Used `pairs()` to visualize relationships between variables.  
- Generated a **correlation matrix** with `corrplot()`.  
+### **1️⃣ Data Preprocessing & Exploratory Analysis**
+🔹 Filtered dataset to select key features.  
+🔹 Used `pairs()` to visualize relationships between variables.  
+🔹 Generated a **correlation matrix** with `corrplot()`.  
 
-### ** Multiple Linear Regression (MLR)**
- Built an **MLR model** to predict `compactness_mean` using relevant features.  
- Evaluated model performance using **residual plots** and **confidence intervals**.  
+### **2️⃣ Multiple Linear Regression (MLR)**
+🔹 Built an **MLR model** to predict `compactness_mean` using relevant features.  
+🔹 Evaluated model performance using **residual plots** and **confidence intervals**.  
 
-### ** Classification Models**
-#### ** Best Subset Selection**
+### **3️⃣ Classification Models**
+#### **🔹 Best Subset Selection**
 - Identified the most relevant features for cancer diagnosis prediction.
 
-#### ** Lasso Regression**
+#### **🔹 Lasso Regression**
 - Applied **L1 regularization** to improve feature selection and reduce overfitting.
 
-#### ** Random Forest**
+#### **🔹 Random Forest**
 - Built an **ensemble model** and assessed **feature importance**.
 
-#### ** Support Vector Classification (SVC)**
+#### **🔹 Support Vector Classification (SVC)**
 - Tuned **hyperparameters (cost)** and evaluated **accuracy**.
 
 ## **Results & Evaluation**
@@ -71,6 +71,6 @@ source("analysis_script.R")
 ```
 
 ## **Future Improvements**
- **Tune hyperparameters** further for Random Forest and SVM.  
- **Experiment with additional feature selection techniques** to refine models.  
- **Test alternative classification models** such as **Gradient Boosting**.
+🚀 **Tune hyperparameters** further for Random Forest and SVM.  
+🚀 **Experiment with additional feature selection techniques** to refine models.  
+🚀 **Test alternative classification models** such as **Gradient Boosting**.
